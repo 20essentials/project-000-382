@@ -46,8 +46,7 @@ class CircleLetters extends HTMLElement {
 
   drawLetters() {
     let container = this.shadowRoot.querySelector('.containerLetters');
-    let message =
-      'Code is magic where ideas become reality through pure logic ';
+    let message = 'Code is magic where ideas become reality through pure logic ';
     let n_letters = message.length;
     let angle = -Math.PI;
     let increase = (Math.PI * 2) / n_letters;
@@ -61,8 +60,6 @@ class CircleLetters extends HTMLElement {
     }
 
     const rotateLetter = () => {
-
-      
       for (let i = 0; i < n_letters; i++) {
         let rx = 100 * Math.cos(angle) + 110;
         let ry = -100 * Math.sin(angle) + 110;
